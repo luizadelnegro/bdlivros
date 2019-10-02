@@ -1,0 +1,22 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+ 
+{% block title %}Login{% endblock %}
+{% load static %}
+<link rel="stylesheet" type="text/css"  href="{% static 'registro/style.css'%}">
+
+
+{% block content %}
+
+<div id="divcntr">
+  <h2>Entre na sua conta</h2>
+  <form method="post">
+    {% csrf_token %}
+  
+    Login:<br><input type="text" name="login" ><br>
+    Senha:<br><input type="text" name="password"><br>
+    <button type="submit">Entrar</button>
+    <br>  <br>
+  </form>
+</div>
+{% endblock %}

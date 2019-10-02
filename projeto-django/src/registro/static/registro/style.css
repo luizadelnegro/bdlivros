@@ -1,0 +1,110 @@
+/* style_base.css*/
+
+
+@media only screen and (min-device-width: 900px){  
+    body {margin: 20px;
+        font-size: 20px;
+    }
+    
+    p{
+         font-size:20px;      
+    }
+    #divcntr {  
+        width: 50%; 
+
+  }
+    input[type=text], input[type=password], input[type=email] {
+        width: 100%;
+        padding: 12px 30px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+}
+@media only screen and (max-device-width: 900px){   
+    h1 {
+        font-size:90px;
+
+    }
+    .btn-primary {
+        font-size:50px;
+
+    }
+    h2,h4 {
+        font-size: 60px;
+    }
+    p{
+        font-size:40px;      
+   }
+    body{
+        margin: 50px;
+        font-size:50px;
+        }
+    #divcntr {  
+        width: 100%; 
+    }
+    input[type=text], input[type=password], input[type=email] {
+        width: 100%;
+        padding: 12px 30px;
+        margin: 8px 0;            
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .navbar {
+        overflow: hidden;
+        width:100%;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+
+
+
+}

@@ -1,0 +1,11 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+  <p>Você não está logado, cadastre-se ou faça login</p>
+  <a  class="btn btn" href="{% url 'signup' %}">Sign up</a>   |    <a  class="btn btn" href="{% url 'login' %}">Login</a>
+  <p></p>
+
+{% endblock %}

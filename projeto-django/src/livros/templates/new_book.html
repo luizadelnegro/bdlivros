@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+    #divcntr { 
+     width:50% }
+input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+button {
+background-color: #4CAF50;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 60%;
+}
+
+</style>
+
+<div id="divcntr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar novo Livro</title>
+</head>
+<body>
+<h3>Aqui você cadastra livros</h3>
+<form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        
+    	<button type="submit" class="save btn btn-default">Save</button>
+    </form>
+  <p></p>
+</body>
+</html>
+
+
+  <a href="{% url 'books_list' %}">Lista Livros</a>
+</body>
+</div>
+</html>
+{% endblock %}

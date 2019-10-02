@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<h2>Bem vindo ao seu DB de livros.</h2>
+ <p></p>
+ {{request.COOKIES.login}},
+     Voce esta logado
+ 
+    
+
+    <p></p>
+    <a href="{% url 'books_list' %}"> Ver lista de TODOS os livros cadastrados</a>
+    <p></p>
+    <a href="{% url 'my_books' %}">Ver Sua lista de livros</a>
+    <p></p>
+    <a href="{% url 'new_book' %}">Cadastrar novos livros</a>
+    <p></p>
+    <a href="{% url 'logout' %}">Sair</a>
+    <p></p>
+      
+
+{% endblock %}

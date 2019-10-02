@@ -1,0 +1,42 @@
+/* stylebook.css*/
+
+
+@media only screen and (min-device-width: 900px){  
+    body {margin: 20px;
+    }
+    
+    p{
+         font-size:20px;      
+    }
+    .btn{
+        background-color: #2f7929;
+        width: 20px;
+        border-radius: 12px;
+    }
+    .divbook {width: 3px;}
+
+
+}
+@media only screen and (max-device-width: 900px){   
+    body {margin: 40px;
+        font-size:60px;
+    }
+    
+    p{
+         font-size:60px;      
+    }
+    .btn{
+        background-color: #2f7929;
+        font-size:40px;
+        width: 20%;
+
+    }
+    .divbook {width: 40%;
+    font-size:40px;}
+
+
+
+
+
+
+}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header %} 
+<link rel="stylesheet" type="text/css"  href="{% static 'livros/stylebook.css'%}">
+{% endblock %}
+
+{% block content %}
+  <h2>Lista dos seus livros</h2>
+
+
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="alert alert-danger"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+
+
+  {% if my_books %}
+  <div id="divbook">
+
+    {% for Book in my_books %}
+    <form method="POST">
+    {% csrf_token %}
+    <p>
+      {{ Book.titulo }} 
+      <button type="submit"  class="btn btn-danger btn-xs" name="book" value="{{ Book.id }}" >-</button> 
+    </p>
+      {% endfor %}
+    </form>
+    </div>
+
+
+
+
+
+  {% else %}
+    <p>There are no books.</p>
+  {% endif %}  
+
+   <a href="{% url 'books_list' %}">Ver todos os livros cadastrados</a>
+    <p></p>
+
+
+{% endblock %}

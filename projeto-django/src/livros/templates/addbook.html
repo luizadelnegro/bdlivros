@@ -1,0 +1,14 @@
+
+  <!-- templates/signup.html -->
+{% extends 'base.html' %}
+ 
+{% block title %}Adicionar livro a lista{% endblock %}
+
+{% block content %}
+  <h2>Add book to list</h2>
+  <form method="POST">
+    {% csrf_token %}
+   {{forms.as_p}}
+
+  </form>
+{% endblock %}
